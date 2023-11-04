@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Collage Maker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Photo Collage Maker</h1>
+        <form id="upload-form">
+            <input type="file" id="photo1" accept="image/*" required>
+            <input type="file" id="photo2" accept="image/*" required>
+            <input type="file" id="photo3" accept="image/*">
+            <button type="button" id="make-collage">Make Collage</button>
+        </form>
+        <div id="collage-container">
+            <div id="collage-wrapper">
+                <canvas id="collage-canvas" width="400" height="300"></canvas>
+            </div>
+        </div>
+        <button id="download-button">Download</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
